@@ -69,9 +69,11 @@ body{
 .container .content .right-side{
   width: 75%;
   margin-left: 75px;
+  color: brown;
+  font-size: 12px;
 }
 .content .right-side .topic-text{
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 600;
   color: brown;
 }
