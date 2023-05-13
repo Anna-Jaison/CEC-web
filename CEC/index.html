@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img\logo.png">
+  </head>
+  <body>
+    <div class="header">
+        <img class="logo" src="img\logo.png" formaction="index.html">
+        <span class="t1">COLLEGE OF ENGINEERING CHENGANNUR</span>
+        <span class="t2">MANAGED BY IHRD</span>
+        <button class="openbtn" onclick="openNav()">☰</button> 
+<span class="i">
+        <a href="https://www.linkedin.com/school/college-of-engineering-chengannur/" class="fa fa-linkedin"></a>
+        <a href="https://youtube.com/@ihrdtharang" class="fa fa-youtube"></a>
+        <a href="https://instagram.com/cec_chengannur?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+        <a href="https://m.facebook.com/CEConline" class="fa fa-facebook"></a></span>
+        
+     
+        
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="https://ceconline.edu/about/"><i class="fa fa-institution"></i>  About</a>
+          <a href="https://www.instagram.com/reel/CivILhKJNI4/?igshid=MzRlODBiNWFlZA=="><i class="fa fa-bullhorn "></i> Media</a>
+          <a href="cont.html"><i class="fa fa-fw fa-envelope"></i>  Contact</a>
+          <a href="https://ceconline.edu/organizations/"><i class="fa fa-group"></i> Organisations</a>
+        </div>
+         
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+  
+    
+      
+      <div class="slideshow-container fade">
+
+        <!-- Full images with numbers and message Info -->
+        <div class="Containers">
+          <div class="MessageInfo">1 / 5</div>
+          <img src="img\1.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+      
+        <div class="Containers">
+          <div class="MessageInfo">2 / 5</div>
+          <img src="img\tharang.png" style="width:100%" >
+          <div class="Info"></div>
+        </div>
+
+        <div class="Containers">
+          <div class="MessageInfo">3 / 5</div>
+          <img src="img\graph.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+    
+        <div class="Containers">
+          <div class="MessageInfo">4 / 5</div>
+          <img src="img\3.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+
+        <div class="Containers">
+          <div class="MessageInfo">5 / 5</div>
+          <img src="img\place.png" style="width:100%">
+          <div class="Info"></div>
+        </div>
+
+      
+        <!-- Back and forward buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The circles/dots -->
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        <span class="dots" onclick="currentSlide(5)"></span>
+      </div> 
+      <script>
+        var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+      </script>
+    </div>
+
+     
+  <div class="features">
+   <div class="row">
+    <div class="text-col">
+      <h2>About Us</h2>
+      <p>The College of Engineering Chengannur (CEC), was established by the Government of Kerala under the aegis of the IHRD, in the year 1993. It has been approved by All India Council for Technical Education (AICTE) and affiliated to APJ Abdul Kalam Technological University (KTU). Ever since its inception, the college has maintained its eminence as a leading engineering college in Kerala. Being located in Chengannur town, Alleppey district the college has got access to all means of transport, communication and lodging facilities.</p>
+    </div>
+    <div class="img-col">
+      <img src="img\3.jpg">
+    </div>
+   </div>
+  
+   <div class="pg"><h2>UG & PG Programs</h2></div>
+
+   <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>CSE</h2>
+      </div>
+      <div class="flip-box-back">
+        <p><li>Merit: 60 Seats</li>
+        <li> Management: 60 Seats</li>
+      <li>NRI: 20 Seats </li></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>ECE</h2>
+      </div>
+      <div class="flip-box-back">
+        <p><li>Merit: 60 Seats</li>
+          <li> Management: 60 Seats</li>
+        <li>NRI: 20 Seats </li></p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>EEE</h2>
+      </div>
+      <div class="flip-box-back">
+        <p><li>Merit: 60 Seats</li>
+          <li> Management: 60 Seats</li>
+        <li>NRI: 20 Seats </li></p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>MCA</h2>
+      </div>
+      <div class="flip-box-back">
+        <p><li>Merit: 60 Seats</li>
+          <li> Management: 60 Seats</li>
+        <li>NRI: 20 Seats </li></p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <div class="row">
+    <div class="img-col">
+      <img src="img\6.jpg">
+    </div>
+    <div class="text-col">
+      <h2>Placements </h2>
+      <p>Training and Placement Cell
+        The Training and Placement Cell, (TPC) of the College of Engineering, Chengannur is a body of active students, guided by Staff-in-Charge. Student members are specially selected to carry out the responsible working of the cell. The TPC dedicates itself to help students develop their personalities and establish their careers.</p>
+    </div>
+   </div>
+
+
+
+  <div class="pg"><h2>Organisations</h2></div>
+
+  <div class="row">
+    <div class="column">
+      <img src="img\ieee.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img\nss.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img\pro.jpg" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img\ncc.jpg" alt="Mountains" style="width:100%">
+    </div> 
+  </div>
+
+   <div class="row">
+  <div class="img-col">
+    <img src="img\u.jpg">
+  </div>
+    <div class="text-col">
+      <h2>Arts & Sports</h2>
+      <p><a href="https://www.instagram.com/reel/CeabRoFJpd4/?igshid=MzRlODBiNWFlZA==">Utsav</a> the art fest conducted every year under the college and Management.
+        <a href="https://www.instagram.com/reel/CddtzHNJTdK/?igshid=MzRlODBiNWFlZA==">Ashwa</a> is the annual sports Meetings held  every year
+      </p>   
+   </div>
+   </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-user"></i></p>
+        <h3>11+</h3>
+        <p>Innovative Events</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-check"></i></p>
+        <h3>55+</h3>
+        <p>Achievements</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-smile-o"></i></p>
+        <h3>700+</h3>
+        <p>Happy Students</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-coffee"></i></p>
+        <h3>100+</h3>
+        <p>Company Recuriters</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  </body>
+
+</html>
+    
+      
